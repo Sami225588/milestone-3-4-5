@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="resume">
+    <div class="container">
+        <h1>Thank you for creating your resume!</h1>
+        <h2>Your Resume</h2>
+
+        <!-- Resume Information -->
+        <div class="resume-section">
+            <h2><i class="fas fa-user"></i> Personal Information</h2>
+            <img id="profile-picture-display" alt="Profile Picture" >
+            <div class="resume-field" id="name-display" contenteditable="false"></div>
+            <div class="resume-field" id="email-display" contenteditable="false"></div>
+
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="resume-field" id="education-display" contenteditable="false"></div>
+
+            <h2><i class="fas fa-laptop-code"></i> Skills</h2>
+            <div class="resume-field" id="skills-display" contenteditable="false"></div>
+
+            <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+            <div class="resume-field" id="experience-display" contenteditable="false"></div>
+            <input type="text" id="username" placeholder="Enter your username">
+            <div id="share-link-container">
+                <p>Share your resume link:</p>
+                <input type="text" id="resume-link" readonly>
+                <button id="copy-link">Copy Link</button>
+            </div>
+            
+
+        </div>
+
+        <!-- Edit Button -->
+        <button id="edit-button">Edit Resume</button>
+        <button id="download-pdf">Download as PDF</button>
+
+    </div>
+    <script src="app.js" defer></script>
+</body>
+</html>
